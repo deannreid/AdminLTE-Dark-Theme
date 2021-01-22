@@ -5,7 +5,10 @@
  *    Network-wide ad blocking via your own hardware.
  *
  *    This file is copyright under the latest version of the EUPL.
- *    Please see LICENSE file for your rights under this license. */
+ *    Please see LICENSE file for your rights under this license. 
+ * 	  
+ *    Customised by Dean Reid - https://github.com/deannreid
+ */
 $indexpage = true;
 require "scripts/pi-hole/php/header.php";
 require_once "scripts/pi-hole/php/gravity.php";
