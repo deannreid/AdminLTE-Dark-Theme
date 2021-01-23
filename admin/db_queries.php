@@ -102,9 +102,9 @@ require "scripts/pi-hole/php/header.php";
     <div class="small-box bg-red no-user-select">
       <div class="inner">
         <h3 class="statistic" id="ads_blocked_exact">---</h3>
-        <p>Queries Blocked</p>
+        <p><br/>Queries Blocked</p>
       </div>
-      <div class="icon icon-red"> <i class="fas fa-hand-paper"></i> </div>
+      <div class="icon icon-red"> <i class="fas fa-ban"></i> </div>
     </div>
   </div>
   <!-- ./col -->
@@ -113,9 +113,9 @@ require "scripts/pi-hole/php/header.php";
     <div class="small-box bg-red no-user-select">
       <div class="inner">
         <h3 class="statistic" id="ads_wildcard_blocked">---</h3>
-        <p>Queries Blocked (Wildcards)</p>
+        <p><br/>Queries Blocked (Wildcards)</p>
       </div>
-      <div class="icon icon-red"> <i class="fas fa-hand-paper"></i> </div>
+      <div class="icon icon-red"> <i class="fas fa-ban fa-1x"></i> </div>
     </div>
   </div>
   <!-- ./col -->
@@ -124,7 +124,7 @@ require "scripts/pi-hole/php/header.php";
     <div class="small-box bg-green no-user-select">
       <div class="inner">
         <h3 class="statistic" id="dns_queries">---</h3>
-        <p>Queries Total</p>
+        <p><br/>Queries Total</p>
       </div>
       <div class="icon icon-green"> <i class="fas fa-globe-americas"></i> </div>
     </div>
@@ -135,7 +135,7 @@ require "scripts/pi-hole/php/header.php";
     <div class="small-box bg-yellow no-user-select">
       <div class="inner">
         <h3 class="statistic" id="ads_percentage_today">---</h3>
-        <p>Percent Blocked</p>
+        <p><br/>Percent Blocked</p>
       </div>
       <div class="icon icon-yellow"> <i class="fas fa-chart-pie"></i> </div>
     </div>
