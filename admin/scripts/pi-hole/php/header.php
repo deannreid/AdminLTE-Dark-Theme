@@ -4,10 +4,7 @@
 *  Network-wide ad blocking via your own hardware.
 *
 *  This file is copyright under the latest version of the EUPL.
-*  Please see LICENSE file for your rights under this license. 
-*
-* Customised by Dean Reid - https://github.com/deannreid
-*/
+*  Please see LICENSE file for your rights under this license. */
 
     require "scripts/pi-hole/php/auth.php";
     require "scripts/pi-hole/php/password.php";
@@ -333,18 +330,18 @@ if($auth) {
                     <img src="img/logo.svg" alt="Pi-hole logo" width="45" height="67" style="height: 67px;">
                 </div>
                 <div class="pull-left info">
-					 <?php echo !$hostname ? ' class="hidden"' : "" ?>
-				<?php echo '<span id="status"><i class="fa fa-id-card-o" aria-hidden="true"></i></i><strong> Hostname:</strong></span>';?>
-					<?php echo "${bp}<strong> <font size='1'>  </strong> ".$hostname."\n";
+					 <?php echo !$hostname ?' class="hidden"' : "" ?>
+				<?php echo '<span id="status"><i class="far fa-id-badge" aria-hidden="true"></i></i><strong>  Hostname:</strong></span>';?>
+					<?php echo "${bp}<strong><font size='1'></strong>".$hostname."\n";
 					?>           
 				    <br/>
 					<?php
-					echo '<span id="status"><i class="fa fa-windows" aria-hidden="true"></i></i><strong> OS Type:</strong></span>';
+					echo '<span id="status"><i class="fab fa-linux" aria-hidden="true"></i></i><strong>  OS Type:</strong></span>';
 					echo "${bp}<strong> <font size='1'></strong> ".os_release()."\n";
                     ?>
 					<br/>
                     <?php
-					echo '<i class="fa fa-clock-o" aria-hidden="true"></i>';
+					echo '<i class="far fa-clock" aria-hidden="true"></i>';
 					echo "${bp}<strong> OS Uptime:</strong> ".os_uptime()."\n";
                     ?>
 					<br/>
@@ -353,7 +350,7 @@ if($auth) {
 						$si_prefix = array( 'B', 'KB', 'MB', 'GB', 'TB', 'EB', 'ZB', 'YB' );
 						$base = 1024;
 						$class = min((int)log($bytes , $base) , count($si_prefix) - 1);
-						echo '<i class="fa fa-database text-blue" aria-hidden="true"></i><strong> Disk Space: </strong>';
+						echo '<i class="far fa-hdd text-blue" aria-hidden="true"></i><strong> Disk Space: </strong>';
 						echo sprintf('%1.2f' , $bytes / pow($base,$class)) . ' ' . $si_prefix[$class] . '<br />';
 					?>
 
@@ -397,7 +394,7 @@ if($auth) {
                     ?>
                     <br/>
                     <?php
-                    echo "<span title=\"Detected $nproc cores\"><i class=\"fa fa-microchip ";
+                    echo "<span title=\"Detected $nproc cores\"><i class=\"fas fa-microchip ";
                         if ($loaddata[0] > $nproc) {
                             echo "text-red";
                         }
@@ -409,7 +406,7 @@ if($auth) {
                     ?>
                     <br/>
                     <?php
-                    echo "<span><i class=\"fa fa-circle ";
+                    echo "<span><i class=\"fas fa-memory ";
                         if ($memory_usage > 0.75 || $memory_usage < 0.0) {
                             echo "text-red";
                         }
@@ -689,6 +686,11 @@ if($auth) {
                 <?php } ?>
 				<br/>
                 <li class="header text-uppercase">External navigation</li>
+                <li>
+                    <a href="https://192.168.1.137:10000/" rel="noopener" target="_blank">
+                        <i class="fa fa-server"></i> <span>Server Manager</span>
+                    </a>
+                </li>
 				<!-- Donate -->
                 <li>
                     <a href="https://pi-hole.net/donate/" rel="noopener" target="_blank">
