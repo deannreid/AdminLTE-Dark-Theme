@@ -5,10 +5,7 @@
  *    Network-wide ad blocking via your own hardware.
  *
  *    This file is copyright under the latest version of the EUPL.
- *    Please see LICENSE file for your rights under this license. 
- * 	  
- *    Customised by Dean Reid - https://github.com/deannreid
- */
+ *    Please see LICENSE file for your rights under this license. */
 $indexpage = true;
 require "scripts/pi-hole/php/header.php";
 require_once "scripts/pi-hole/php/gravity.php";
@@ -39,12 +36,12 @@ function getinterval() {
   <!-- ./col -->
   <div class="col-lg-3 col-sm-6"> 
     <!-- small box -->
-    <div class="small-box bg-blue no-user-select">
+    <div class="small-box bg-red no-user-select">
       <div class="inner">
-        <h3 class="small-text bgt-blue"><span id="queries_blocked_today">---</span></h3>
+        <h3 class="small-text bgt-red"><span id="queries_blocked_today">---</span></h3>
         <p>Queries Blocked</p>
       </div>
-      <div class="icon icon-blue"> <i class="fas fa-ban"></i> </div>
+      <div class="icon icon-red"> <i class="fas fa-ban"></i> </div>
     </div>
   </div>
   <!-- ./col -->
@@ -61,12 +58,12 @@ function getinterval() {
   <!-- ./col -->
   <div class="col-lg-3 col-sm-6"> 
     <!-- small box -->
-    <div class="small-box bg-red no-user-select" title="<?php echo gravity_last_update(); ?>">
+    <div class="small-box bg-blue no-user-select" title="<?php echo gravity_last_update(); ?>">
       <div class="inner">
-        <h3 class="small-text bgt-red"><span id="domains_being_blocked">---</span></h3>
+        <h3 class="small-text bgt-blue"><span id="domains_being_blocked">---</span></h3>
         <p>Domains on Blocklist</p>
       </div>
-      <div class="icon icon-red"> <i class="fas fa-list-alt"></i> </div>
+      <div class="icon icon-blue"> <i class="fas fa-list-alt"></i> </div>
     </div>
   </div>
   <!-- ./col --> 
