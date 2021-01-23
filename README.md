@@ -53,10 +53,6 @@ Main Page:
     <a href="https://pi-hole.net/">
         <img src="https://raw.githubusercontent.com/deannreid/AdminLTE-Dark-Theme/main/screenshots/main%20page.PNG" alt="Pi-hole Dark Web interface">
     </a>
-
-Settings Page:     <a href="https://pi-hole.net/">
-        <img src="https://github.com/deannreid/AdminLTE-Dark-Theme/blob/main/screenshots/settings.PNG" alt="Pi-hole">
-    </a>
     
 ---
 
