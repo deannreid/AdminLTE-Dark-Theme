@@ -334,18 +334,18 @@ if($auth) {
                 </div>
                 <div class="pull-left info">
 					 <?php echo !$hostname ? ' class="hidden"' : "" ?>
-				<?php echo '<span id="status"><i class="fa fa-id-card-o" aria-hidden="true"></i></i><strong> Hostname:</strong></span>';?>
-					<?php echo "${bp}<strong> <font size='1'>  </strong> ".$hostname."\n";
+				<?php echo '<span id="status"><i class="fas fa-id-card-alt" aria-hidden="true"></i></i><strong> &nbsp;Hostname:</strong></span>';?>
+					<?php echo "${bp}<strong> <font size='1'></strong>".$hostname."\n";
 					?>           
 				    <br/>
 					<?php
-					echo '<span id="status"><i class="fa fa-windows" aria-hidden="true"></i></i><strong> OS Type:</strong></span>';
+					echo '<span id="status"><i class="fab fa-ubuntu text-yellow" aria-hidden="true"></i></i><strong>&nbsp;&nbsp; OS Type:</strong></span>';
 					echo "${bp}<strong> <font size='1'></strong> ".os_release()."\n";
                     ?>
 					<br/>
                     <?php
-					echo '<i class="fa fa-clock-o" aria-hidden="true"></i>';
-					echo "${bp}<strong> OS Uptime:</strong> ".os_uptime()."\n";
+					echo '<i class="far fa-clock"></i></i>';
+					echo "${bp}<strong>&nbsp;&nbsp; OS Uptime:</strong> ".os_uptime()."\n";
                     ?>
 					<br/>
 					<?php 
@@ -353,7 +353,7 @@ if($auth) {
 						$si_prefix = array( 'B', 'KB', 'MB', 'GB', 'TB', 'EB', 'ZB', 'YB' );
 						$base = 1024;
 						$class = min((int)log($bytes , $base) , count($si_prefix) - 1);
-						echo '<i class="fa fa-database text-blue" aria-hidden="true"></i><strong> Disk Space: </strong>';
+						echo '<i class="fa fa-database text-blue" aria-hidden="true"></i><strong>&nbsp;&nbsp; Disk Space: </strong>';
 						echo sprintf('%1.2f' , $bytes / pow($base,$class)) . ' ' . $si_prefix[$class] . '<br />';
 					?>
 
@@ -365,13 +365,13 @@ if($auth) {
                             $pistatus = null;
                         }
                         if ($pistatus === "1") {
-                            echo '<span id="status"><i class="fa fa-wifi text-green-light"></i> FTL Active</span>';
+                            echo '<span id="status"><i class="fa fa-wifi text-green-light"></i> <strong>FTL:</strong>  Active</span>';
                         } elseif ($pistatus === "0") {
-                            echo '<span id="status"><i class="fa fa-wifi text-red"></i> FTL Offline</span>';
+                            echo '<span id="status"><i class="fa fa-wifi text-red"></i> <strong>FTL:</strong>  Offline</span>';
                         } elseif ($pistatus === "-1") {
                             echo '<span id="status"><i class="fa fa-wifi text-red"></i> DNS service not running</span>';
                         } else {
-                            echo '<span id="status"><i class="fa fa-wifi text-orange"></i> FTL Unknown</span>';
+                            echo '<span id="status"><i class="fa fa-wifi text-orange"></i> <strong>FTL:</strong>  Unknown</span>';
                         }
 						?> <br/>
 						<?php
@@ -379,7 +379,7 @@ if($auth) {
                         if($FTL)
                         {
                             if ($celsius >= -273.15) {
-                                echo "<span id=\"temperature\"><i class=\"fa fa-thermometer-half ";
+                                echo "<span id=\"temperature\"><i class=\"fa fa-fire ";
                                 if ($celsius > $temperaturelimit) {
                                     echo "text-red";
                                 }
@@ -387,12 +387,12 @@ if($auth) {
                                 {
                                     echo "text-vivid-blue";
                                 }
-                                ?>"></i> Temp:&nbsp;<span id="rawtemp" hidden><?php echo $celsius;?></span><span id="tempdisplay"></span></span><?php
+					?>"></i>&nbsp;&nbsp; <strong>Temp:</strong>&nbsp;<span id="rawtemp" hidden><?php echo $celsius;?></span><span id="tempdisplay"></span></span><?php
                             }
                         }
                         else
                         {
-                            echo '<span id=\"temperature\"><i class="fa fa-circle text-red"></i> FTL offline</span>';
+                            echo '<span id=\"temperature\"><i class="fa fa-circle text-red"></i><strong>FTL:</strong> Offline</span>';
                         }
                     ?>
                     <br/>
@@ -405,7 +405,7 @@ if($auth) {
                         {
                             echo "text-green-light";
                         }
-                        echo "\"></i> Load:&nbsp;&nbsp;" . $loaddata[0] . "&nbsp;&nbsp;" . $loaddata[1] . "&nbsp;&nbsp;". $loaddata[2] . "</span>";
+                        echo "\"></i><strong>&nbsp; Load:</strong>&nbsp;&nbsp;" . $loaddata[0] . "&nbsp;&nbsp;" . $loaddata[1] . "&nbsp;&nbsp;". $loaddata[2] . "</span>";
                     ?>
                     <br/>
                     <?php
@@ -419,11 +419,11 @@ if($auth) {
                         }
                         if($memory_usage > 0.0)
                         {
-                            echo "\"></i> Memory usage:&nbsp;&nbsp;" . sprintf("%.1f",100.0*$memory_usage) . "&thinsp;%</span>";
+                            echo "\"></i><strong>&nbsp; Memory usage:</strong> &nbsp;&nbsp;" . sprintf("%.1f",100.0*$memory_usage) . "&thinsp;%</span>";
                         }
                         else
                         {
-                            echo "\"></i> Memory usage:&nbsp;&nbsp; N/A</span>";
+                            echo "\"></i><strong>&nbsp; Memory usage:</strong>&nbsp;&nbsp; N/A</span>";
                         }
                     ?>
 					<br/>
