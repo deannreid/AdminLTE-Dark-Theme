@@ -4,10 +4,7 @@
 *    Network-wide ad blocking via your own hardware.
 *
 *    This file is copyright under the latest version of the EUPL.
-*    Please see LICENSE file for your rights under this license. 
-*
-*    Customised by Dean Reid - https://github.com/deannreid
-*/
+*    Please see LICENSE file for your rights under this license. */
     require "scripts/pi-hole/php/header.php";
 ?>
 
@@ -74,12 +71,12 @@
 <div class="row">
     <div class="col-lg-3 col-xs-12">
         <!-- small box -->
-        <div class="small-box bg-aqua no-user-select">
+        <div class="small-box bg-red no-user-select">
             <div class="inner">
                 <h3 class="statistic" id="ads_blocked_exact">---</h3>
                 <p>Queries Blocked</p>
             </div>
-            <div class="icon">
+            <div class="icon icon-red">
                 <i class="fas fa-hand-paper"></i>
             </div>
         </div>
@@ -87,12 +84,12 @@
     <!-- ./col -->
     <div class="col-lg-3 col-xs-12">
         <!-- small box -->
-        <div class="small-box bg-aqua no-user-select">
+        <div class="small-box bg-red no-user-select">
             <div class="inner">
                 <h3 class="statistic" id="ads_wildcard_blocked">---</h3>
                 <p>Queries Blocked (Wildcards)</p>
             </div>
-            <div class="icon">
+            <div class="icon icon-red">
                 <i class="fas fa-hand-paper"></i>
             </div>
         </div>
@@ -105,7 +102,7 @@
                 <h3 class="statistic" id="dns_queries">---</h3>
                 <p>Queries Total</p>
             </div>
-            <div class="icon">
+            <div class="icon icon-green">
                 <i class="fas fa-globe-americas"></i>
             </div>
         </div>
@@ -116,9 +113,9 @@
         <div class="small-box bg-yellow no-user-select">
             <div class="inner">
                 <h3 class="statistic" id="ads_percentage_today">---</h3>
-                <p>Queries Blocked</p>
+                <p>Percent Blocked</p>
             </div>
-            <div class="icon">
+            <div class="icon icon-yellow">
                 <i class="fas fa-chart-pie"></i>
             </div>
         </div>
@@ -203,5 +200,4 @@
 <script src="scripts/pi-hole/js/db_queries.js?v=<?=$cacheVer?>"></script>
 
 <?php
-    require "scripts/pi-hole/php/footer.php";
 ?>
