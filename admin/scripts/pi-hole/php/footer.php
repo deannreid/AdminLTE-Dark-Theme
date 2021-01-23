@@ -6,8 +6,8 @@
 *  This file is copyright under the latest version of the EUPL.
 *  Please see LICENSE file for your rights under this license. 
 *
-* Customised by Dean Reid - https://github.com/deannreid
-*/
+* Customised by Dean Reid - https://github.com/deannreid 
+*/ 
 ?>
 
         </section>

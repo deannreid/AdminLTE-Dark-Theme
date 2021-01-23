@@ -7,7 +7,7 @@
 *  Please see LICENSE file for your rights under this license. 
 *
 * Customised by Dean Reid - https://github.com/deannreid
-*/
+*/ 
 
     require "scripts/pi-hole/php/auth.php";
     require "scripts/pi-hole/php/password.php";

@@ -7,7 +7,7 @@
 *  Please see LICENSE file for your rights under this license. 
 *
 * Customised by Dean Reid - https://github.com/deannreid
-*/
+*/ 
 
 // Array of available themes and their description
 $available_themes = array();
