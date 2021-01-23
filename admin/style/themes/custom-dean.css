@@ -75,7 +75,7 @@
 }
 .dataTables_wrapper input[type="search"] {
   border-radius: 4px;
-  background-color: #353c42;
+  background-color: #2B2B2B;
   border: 0;
   color: #bec5cb;
 }
@@ -486,7 +486,7 @@ code, pre {
   padding: 2px 4px;
   font-size: 90%;
   color: #bec5cb;
-  background-color: #353c42;
+  background-color: #2B2B2B;
   border-radius: 4px;
 }
 /* Used in the Query Log table */
@@ -552,7 +552,7 @@ opacity: 1;
   border: 1px solid #171c20;
 }
 .table-striped > tbody > tr:nth-of-type(2n + 1) {
-  background-color: #2d343a;
+  background-color: #2C2C2C;
 }
 .panel, .panel-body, .panel-default > .panel-heading {
   background-color: #2C2C2C;
