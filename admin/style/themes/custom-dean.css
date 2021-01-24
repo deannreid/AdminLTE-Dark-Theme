@@ -348,8 +348,8 @@ h4 {
   color: #bec5cb !important;
 }
 .navbar-nav > .user-menu > .dropdown-menu > .user-footer {
-  background-color: #353c42bb;
-  padding: 10px;
+  background-color: transparent;
+  padding: 1px;
 }
 /* Quick Info Boxes */
 .small-box {
@@ -547,10 +547,27 @@ background-color: #353c42;
 opacity: 1;
 }
 .dropdown-menu {
-  background-color: #4c5761;
+  background-color: #2C2C2C;
+  border: 1px solid #171c20;
+	  border-radius: 7px !important;
+  -webkit-box-shadow: 0px 12px 36px -4px rgba(0, 0, 0, 0.27) !important;
+  -moz-box-shadow: 0px 12px 36px -4px rgba(0, 0, 0, 0.27) !important;
+  box-shadow: 0px 12px 36px -4px rgba(0, 0, 0, 0.27) !important;
+}
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+  background-color: #2C2C2C;
   color: #bec5cb;
   border: 1px solid #171c20;
+  border-radius: 7px !important;
+  -webkit-box-shadow: 0px 12px 36px -4px rgba(0, 0, 0, 0.27) !important;
+  -moz-box-shadow: 0px 12px 36px -4px rgba(0, 0, 0, 0.27) !important;
+  box-shadow: 0px 12px 36px -4px rgba(0, 0, 0, 0.27) !important;
 }
+/* fix text on dropdown */
+.navbar-nav>.user-menu>.dropdown-menu>.user-body a {
+	background: #2C2C2C !important;
+}
+
 .table-striped > tbody > tr:nth-of-type(2n + 1) {
   background-color: #2C2C2C;
 }
