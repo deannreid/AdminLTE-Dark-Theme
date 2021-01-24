@@ -335,17 +335,17 @@ if($auth) {
                 <div class="pull-left info">
 					 <?php echo !$hostname ? ' class="hidden"' : "" ?>
 				<?php echo '<span id="status"><i class="fas fa-id-card-alt" aria-hidden="true"></i></i><strong> &nbsp;Hostname:</strong></span>';?>
-					<?php echo "${bp}<strong> <font size='1'></strong>".$hostname."\n";
+					<?php echo "<strong> <font size='1'></strong>".$hostname."\n";
 					?>           
 				    <br/>
 					<?php
 					echo '<span id="status"><i class="fab fa-ubuntu text-yellow" aria-hidden="true"></i></i><strong>&nbsp;&nbsp; OS Type:</strong></span>';
-					echo "${bp}<strong> <font size='1'></strong> ".os_release()."\n";
+					echo "<strong> <font size='1'></strong> ".os_release()."\n";
                     ?>
 					<br/>
                     <?php
 					echo '<i class="far fa-clock"></i></i>';
-					echo "${bp}<strong>&nbsp;&nbsp; OS Uptime:</strong> ".os_uptime()."\n";
+					echo "<strong>&nbsp;&nbsp; OS Uptime:</strong> ".os_uptime()."\n";
                     ?>
 					<br/>
 					<?php 
