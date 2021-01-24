@@ -33,12 +33,8 @@ Easy to install; Just copy all the files in the admin folder to the following di
 
 ## Removal
 
-To Uninstall - just run this in ssh
+To Uninstall - just run this in ssh and select update
 
-```
-pihole -up 
-```
-or 
 ```
 curl -sSL https://install.pi-hole.net | bash
 ```
