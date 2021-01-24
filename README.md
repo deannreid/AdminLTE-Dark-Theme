@@ -27,7 +27,17 @@ I have also added more information to the tab menu - If you don't want this - th
 
 ## Installation
 
-Easy to install; Just copy all the files in the admin folder to the following directory /var/www/html/admin
+Easy to install; 
+
+```
+Just copy all the files in the admin folder to the following directory /var/www/html/admin
+```
+
+Then after you've logged in 
+
+```
+Go to Settings > API/Web Interface > Select Pi-hole Custom theme Option
+```
 
 ---
 
