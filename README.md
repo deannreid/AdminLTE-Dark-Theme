@@ -4,7 +4,7 @@
  
  The design idea was originally from @DoctorMidnight - https://discourse.pi-hole.net/t/dark-admin-theme/647 I have just re-created it to work on the latest AdminLTE version
  
-I have also added more information to the tab menu - If you don't want this - then don't copy the <b>header.php</b> file in the admin\scripts\pi-hole\php folder
+### I have also added more information to the tab menu - If you don't want this - then don't copy the <b>header.php</b> file in the admin\scripts\pi-hole\php folder
  
 <p align="center">
     <a href="https://pi-hole.net/">
