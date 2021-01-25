@@ -16,9 +16,9 @@ $available_themes = array();
 *  Array[1] = Is this a dark mode theme? (Sets background to black during page reloading to avoid white "flashing")
 *  Array[2] = Style sheet name
 */
-$available_themes["default-light"] = array("Pi-hole default theme (light, default)", true, "default-light");
-$available_themes["default-dark"] = array("Pi-hole midnight theme (dark)", false, "default-dark");
-$available_themes["custom-dark"] = array("Pi-hole Custom theme (dark)", false, "custom-dean");
+$available_themes["default-light"] = array("Pi-hole default theme (light, default)", false, "default-light");
+$available_themes["default-dark"] = array("Pi-hole midnight theme (dark)", true, "default-dark");
+$available_themes["custom-dark"] = array("Pi-hole Custom theme (dark)", true, "custom-dean");
 
 $webtheme = "";
 // Try to load theme settings from setupVars.conf
